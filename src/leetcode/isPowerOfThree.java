@@ -3,7 +3,7 @@ package leetcode;
 /**
  * @auther 田义会
  * @date 2021/9/23 14:08
- * @description
+ * @description leetcode 326、3的幂
  */
 public class isPowerOfThree {
     public static void main(String[] args) {

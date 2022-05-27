@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @Description leetcode 118、杨辉三角
  * @Author 田义会
  * @Date 2022-05-25 16:38
+ * @Description leetcode 118、杨辉三角
  */
 public class Generate {
     public static void main(String[] args) {

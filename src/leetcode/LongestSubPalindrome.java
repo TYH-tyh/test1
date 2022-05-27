@@ -1,9 +1,9 @@
 package leetcode;
 
 /**
- * @Description leetcode 5、最长回文子串
  * @Author 田义会
  * @Date 2022-05-25 14:20
+ * @Description leetcode 5、最长回文子串
  */
 public class LongestSubPalindrome {
     public static void main(String[] args) {
