@@ -10,7 +10,6 @@ public class LongestSubPalindrome {
         String s = "bbabad";
         System.out.println(longestSubPalindrome(s));
     }
-
     /**
      * @param s
      * @return java.lang.String

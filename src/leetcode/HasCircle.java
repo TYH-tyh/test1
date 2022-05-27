@@ -7,17 +7,15 @@ package leetcode;
  */
 
 
-// Definition for singly-linked list.
+ // Definition for singly-linked list.
 class ListNode {
     int val;
     ListNode next;
-
     ListNode(int x) {
         val = x;
         next = null;
     }
 }
-
 public class HasCircle {
     public boolean hasCycle(ListNode head) {
         return false;

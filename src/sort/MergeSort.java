@@ -14,7 +14,6 @@ public class MergeSort {
         int[] right = Arrays.copyOfRange(array, mid, array.length);
         return merge(mergeSort(left), mergeSort(right));
     }
-
     /**
      * 归并排序——将两段排序好的数组结合成一个排序数组
      *

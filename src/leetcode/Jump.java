@@ -10,7 +10,6 @@ public class Jump {
         int[] nums = {2, 3, 1, 1, 4};
         System.out.println(jump(nums));
     }
-
     /**
      * @param nums
      * @return int
