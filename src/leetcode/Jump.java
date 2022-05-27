@@ -1,9 +1,9 @@
 package leetcode;
 
 /**
- * @Description leetcode 45、跳跃游戏 II
  * @Author 田义会
  * @Date 2022-05-26 11:17
+ * @Description leetcode 45、跳跃游戏 II
  */
 public class Jump {
     public static void main(String[] args) {

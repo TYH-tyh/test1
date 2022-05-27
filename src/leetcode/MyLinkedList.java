@@ -1,9 +1,9 @@
 package leetcode;
 
 /**
- * @Description leetcode 707、设计链表
  * @Author 田义会
  * @Date 2022-05-26 15:51
+ * @Description leetcode 707、设计链表
  */
 public class MyLinkedList {
 

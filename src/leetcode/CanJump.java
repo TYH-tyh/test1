@@ -1,9 +1,9 @@
 package leetcode;
 
 /**
- * @Description leetcode 55、跳跃游戏
  * @Author 田义会
  * @Date 2022-05-26 10:41
+ * @Description leetcode 55、跳跃游戏
  */
 public class CanJump {
     public static void main(String[] args) {
