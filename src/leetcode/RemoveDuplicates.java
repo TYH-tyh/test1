@@ -11,6 +11,7 @@ public class RemoveDuplicates {
             if (s.charAt(i) == s.charAt(i + 1)) {
                 s = s.substring(0, i) + s.substring(i + 2);
                 System.out.println(s);
+                System.out.println("s = " + s);
             }
         }
         return s;
