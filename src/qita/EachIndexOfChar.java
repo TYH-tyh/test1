@@ -1,4 +1,4 @@
-package leetcode;
+package qita;
 
 import java.util.ArrayList;
 import java.util.List;
