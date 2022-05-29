@@ -5,14 +5,21 @@ import leetcode.MyLinkListOfMine;
  * @date 2022/4/25 19:40
  */
 public class main {
+
     public static void main(String[] args) {
         MyLinkListOfMine linkedList = new MyLinkListOfMine();
-        linkedList.addAtHead(1);
-        linkedList.addAtTail(3);
-        linkedList.addAtIndex(1, 2);   //链表变为1-> 2-> 3
-        System.out.println(linkedList.get(1));            //返回2
-        linkedList.deleteAtIndex(1);  //现在链表是1-> 3
+        linkedList.addAtHead(5);
+        linkedList.addAtIndex(1, 2);
         System.out.println(linkedList.get(1));
+        linkedList.addAtHead(6);
+        linkedList.addAtTail(2);
+        System.out.println(linkedList.get(3));
+        linkedList.addAtTail(1);
+        System.out.println(linkedList.get(5));
+        linkedList.addAtHead(2);
+        System.out.println(linkedList.get(2));
+        linkedList.addAtHead(6);
+
 
 
     }

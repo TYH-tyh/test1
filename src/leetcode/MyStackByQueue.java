@@ -18,11 +18,14 @@ public class MyStackByQueue {
         top = new LinkedList<>();
     }
 
+
     public void push(int x) {
         top.offer(x);
+        //如果stack不为空的话，将stack中的元素全部添加到top中，直到stack为空；此时x始终是top里的第一个元素，
         while (!stack.isEmpty()) {
             top.offer(stack.poll());
         }
+        //stack始终为空
         Queue<Integer> temp;
         temp = stack;
         stack = top;
@@ -35,10 +38,12 @@ public class MyStackByQueue {
     }
 
     public int top() {
+
         return stack.peek();
     }
 
     public boolean empty() {
+
         return stack.isEmpty();
     }
 }

@@ -21,8 +21,8 @@ public class MyLinkedList {
         /*for(;index > 0; index--) {
             node = node.next;
         }*/
-        while (index > 0) {
-            node = node.next;
+        while (index > 0) {//3,2,1
+            node = node.next;//1,2,3
             index--;
         }
         return node.val;

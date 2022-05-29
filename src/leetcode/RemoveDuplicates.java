@@ -10,7 +10,7 @@ public class RemoveDuplicates {
         String s = "abbaca";//aacac
         //StringBuffer sb = new StringBuffer(new String(s));
         //System.out.println(sb.deleteCharAt(1));
-        System.out.println(removeDuplicates(s));
+        System.out.println(removeDuplicates1(s));
     }
 
     public static String removeDuplicates(String s) {
@@ -27,16 +27,17 @@ public class RemoveDuplicates {
         return sb.toString();
     }
 
-    public static String removeDuplicates1(String s) {
-        char[] S = s.toCharArray();
+    public static String removeDuplicates1(String S) {
+        char[] s = S.toCharArray();
         int top = -1;
-        for (int i = 0; i < s.length(); i++) {
-            if (top == -1 || S[top] != S[i]) {
-                S[++top] = S[i];
+        for (int i = 0; i < S.length(); i++) {
+            if (top == -1 || s[top] != s[i]) {
+                int x=++top;
+                s[x] = s[i];
             } else {
                 top--;
             }
         }
-        return String.valueOf(S, 0, top + 1);
+        return String.valueOf(s, 0, top + 1);
     }
 }

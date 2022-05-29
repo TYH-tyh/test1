@@ -27,22 +27,28 @@ public class MyLinkListOfMine {
     }
 
     public void addAtHead(int val) {
-        Node1 target = new Node1(val);
+        Node1 newNode = new Node1(val);
+        //考虑链表为空的情况
         if (size == 0) {
-            head = target;
+            head = newNode;
         } else {
-            target.next = head;
-            head = target;
+            newNode.next = head;
+            head = newNode;
         }
         size++;
     }
 
     public void addAtTail(int val) {
-        Node1 node = head;
-        while (node.next != null) {
-            node = node.next;
+        //考虑链表为空的情况
+        if (size == 0) {
+            head.val = val;
+        } else {
+            Node1 node = head;
+            while (node.next != null) {
+                node = node.next;
+            }
+            node.next = new Node1(val);
         }
-        node.next = new Node1(val);
         size++;
     }
 
@@ -51,31 +57,37 @@ public class MyLinkListOfMine {
             this.addAtHead(val);
         } else if (index == this.size) {
             this.addAtTail(val);
-        } else {
+        } else if (index < this.size) {
             Node1 node = head;
             for (int i = 0; i < index - 1; i++) {
                 node = node.next;
             }
-            Node1 temp = new Node1();
-            temp = node.next;
+            Node1 temp = node.next;
             node.next = new Node1(val);
             node.next.next = temp;
+            size++;
         }
-        size++;
+
     }
 
     public void deleteAtIndex(int index) {
-        if (index >= 0 && index < this.size) {
+        //删除头结点并且该节点不是链表唯一节点
+        if (size == 1 && index == 0) {
+            head.val = 0;
+            //删除头结点但是该节点不是链表唯一节点
+        } else if (index == 0 && index < size) {
+            head = head.next;
+        } else if (index > 0 && index < size) {
             Node1 node = head;
-            for (int i = 0; i < index - 1; i++) {
+            for (int i = 0; i < index-1; i++) {
                 node = node.next;
             }
-            Node1 temp = new Node1();
-            temp = node.next.next;
-            node.next = temp;
-            size--;
+            //需要考虑node.next为null的情况
+            node.next = node.next.next;
+        } else {
+            return;
         }
-
+        size--;
     }
 }
 

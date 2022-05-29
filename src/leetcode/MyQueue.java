@@ -6,6 +6,7 @@ import java.util.Stack;
  * @Author 田义会
  * @Date 2022-05-27 15:41
  * @Description leetcode 232、用桟实现队列
+ * @Solution 定义两个栈，
  */
 public class MyQueue {
 
@@ -19,11 +20,7 @@ public class MyQueue {
 
     public void push(int x) {
         temp.push(x);
-        if (queue.isEmpty()) {
-            while (!temp.isEmpty()) {
-                queue.push(temp.pop());
-            }
-        }
+        tempToQueue();
     }
 
     public int pop() {
