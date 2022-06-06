@@ -1,12 +1,12 @@
-package leetcode;
+package leetcode.BinarySearch;
 
 /**
  * @Author 田义会
- * @Date 2022-06-02 15:32
- * @Description leetcode 704、二分查找
+ * @Date 2022-06-06 16:11
+ * @Description leetcode 35、搜索插入位置
  */
-public class Search {
-    public int search(int[] nums, int target) {
+public class SearchInsert {
+    public int searchInsert(int[] nums, int target) {
         int left = 0;
         int right = nums.length;
         while (left < right) {
@@ -19,6 +19,6 @@ public class Search {
                 return middle;
             }
         }
-        return -1;
+        return left;
     }
 }
