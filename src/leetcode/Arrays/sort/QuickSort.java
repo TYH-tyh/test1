@@ -1,8 +1,9 @@
-package sort;
+package leetcode.Arrays.sort;
 
 /**
  * @auther 田义会
  * @date 2022/4/19 14:52
+ * @Description leetcode  912.排序数组  快速排序
  */
 public class QuickSort {
     public static int[] quickSort(int[] array, int start, int end) {

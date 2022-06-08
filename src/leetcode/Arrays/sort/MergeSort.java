@@ -1,10 +1,11 @@
-package sort;
+package leetcode.Arrays.sort;
 
 import java.util.Arrays;
 
 /**
  * @auther 田义会
  * @date 2022/4/19 17:04
+ * @Description leetcode  912.排序数组  归并排序
  */
 public class MergeSort {
     public static int[] mergeSort(int[] array) {

@@ -1,10 +1,11 @@
-package sort;
+package leetcode.Arrays.sort;
 
 import java.util.Arrays;
 
 /**
  * @auther 田义会
  * @date 2022/2/14 16:33
+ * @Description leetcode  912.排序数组  插入排序
  */
 public class InsertSort {
     public static void main(String[] args) {
